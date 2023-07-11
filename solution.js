@@ -74,17 +74,20 @@ const arrayValuesSquaredTimesIndex = (array) => {
   //
 };
 
-const arrayWordsUpcased = () => {
+const arrayWordsUpcased = (array) => {
   //
+  return array.map(x => x.toUpperCase())
 };
 
 // Some
 
-const areSomeNumsDivisibleBy7 = () => {
+const areSomeNumsDivisibleBy7 = (array) => {
+  return array.some(num => num%7 === 0)
   //
 };
 
-const doSomeWordsHaveAnA = () => {
+const doSomeWordsHaveAnA = (array) => {
+ // array.some(word => )
   //
 };
 
