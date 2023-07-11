@@ -22,8 +22,10 @@ const arrayLessThan5 = (nums) => {
   //
 };
 
-const arrayOddLengthWords = () => {
+const arrayOddLengthWords = (words) => {
   //
+return words.filter(word => word.length%2===1)
+
 };
 
 // Find
