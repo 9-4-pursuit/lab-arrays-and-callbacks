@@ -1,73 +1,85 @@
 const { nums, words } = require("./data/data.js");
 
+
 // Every
 const isEveryNumGreaterThan2 = () => {
-  //
+  return nums.every(num => num >= 2);
 };
 
 const isEveryWordShorterThan7 = () => {
-  //
+  return words.every(word => word.length < 7);
 };
 
-// Filter
 
+// Filter
 const arrayLessThan5 = () => {
-  //
+  return nums.filter(num => num < 5);
 };
 
 const arrayOddLengthWords = () => {
-  //
+  return words.filter(word => word.length % 2 === 1);
 };
 
-// Find
 
+// Find
 const firstValDivisibleBy4 = () => {
-  //
+  return nums.find(num => num % 4 === 0);
 };
 
 const firstWordLongerThan4Char = () => {
-  //
+  return words.find(word => word.length > 4);
 };
 
-// Find Index
 
+// Find Index
 const firstNumIndexDivisibleBy3 = () => {
-  //
+  return nums.findIndex(num => num % 3 === 0);
 };
 
 const firstWordIndexLessThan2Char = () => {
-  //
+  return words.findIndex(word => word.length < 2);
 };
 
-// For Each
 
+// For Each
 const logValuesTimes3 = () => {
-  //
+  nums.forEach((num, index) => {
+    if (index < 3) console.log(num);
+    else return;
+  });
 };
 
 const logWordsWithExclamation = () => {
-  //
+  words.forEach(word => console.log(`${word}!`));
 };
 
-// Map
 
+// Map
 const arrayValuesSquaredTimesIndex = () => {
-  //
+  return nums.map((num, index) => num = Math.pow(num, 2) * index);
 };
 
 const arrayWordsUpcased = () => {
-  //
+  return words.map(word => word.toUpperCase());
 };
 
-// Some
 
+// Some
 const areSomeNumsDivisibleBy7 = () => {
-  //
+  return nums.some(num => num % 7 === 0);
 };
 
 const doSomeWordsHaveAnA = () => {
-  //
+  return words.some(word => word.includes('a'));
 };
+
+
+// BONUS: Reduce
+//for both numbers and words arrays
+//pass the desired array as argument
+const addOrConcatenateAllElements = (arr) => {
+  return arr.reduce((acc, curr) => acc + curr);
+}
 
 module.exports = {
   isEveryNumGreaterThan2,
