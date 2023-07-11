@@ -22,17 +22,17 @@ const arrayOddLengthWords = () => {
 // Find
 
 const firstValDivisibleBy4 = () => {
-  //
+  return nums.find((nums) => nums % 4 === 0);
 };
 
 const firstWordLongerThan4Char = () => {
-  //
+  return words.find((words) => words.length >= 4);
 };
 
 // Find Index
 
 const firstNumIndexDivisibleBy3 = () => {
-  //
+  return nums.findIndex((nums) => nums % 3 === 0);
 };
 
 const firstWordIndexLessThan2Char = () => {
