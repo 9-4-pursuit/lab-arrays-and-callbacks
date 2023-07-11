@@ -87,7 +87,7 @@ const areSomeNumsDivisibleBy7 = (array) => {
 };
 
 const doSomeWordsHaveAnA = (array) => {
- // array.some(word => )
+ return array.some(word => word.includes(`a`));
   //
 };
 
