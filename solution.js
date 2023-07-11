@@ -73,18 +73,20 @@ const arrayValuesSquaredTimesIndex = (nums) => {
 };
 
 const arrayWordsUpcased = (words) => {
-  const newArr = 
+  const newArr = words.map(word => word.toUpperCase())
   return newArr
 };
 
 // Some
 
-const areSomeNumsDivisibleBy7 = () => {
-  //
+const areSomeNumsDivisibleBy7 = (nums) => {
+  const result = nums.some(num => num % 7 === 0);
+  return result
 };
 
-const doSomeWordsHaveAnA = () => {
-  //
+const doSomeWordsHaveAnA = (words) => {
+  const result = words.some(word => word.includes('a'));
+  return result
 };
 
 module.exports = {
