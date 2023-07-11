@@ -1,17 +1,24 @@
 const { nums, words } = require("./data/data.js");
 
 // Every
-const isEveryNumGreaterThan2 = () => {
-  //
+const isEveryNumGreaterThan2 = (nums) => {
+const iGreaterThanThreshold = (currentValue) => currentValue >= 2;
+console.log(nums.every(iGreaterThanThreshold))
+return nums.every(iGreaterThanThreshold)
 };
+  //
 
-const isEveryWordShorterThan7 = () => {
+const isEveryWordShorterThan7 = (words) => {
+
+const WordShorterThan7= (currentValue) => currentValue.length <7;
+return words.every(WordShorterThan7)
   //
 };
 
 // Filter
 
-const arrayLessThan5 = () => {
+const arrayLessThan5 = (nums) => {
+  return nums.filter(num => num < 5)
   //
 };
 
@@ -21,12 +28,13 @@ const arrayOddLengthWords = () => {
 
 // Find
 
-const firstValDivisibleBy4 = () => {
+const firstValDivisibleBy4 = (array) => {
+  return array.find(element => !(element%4))
   //
 };
 
-const firstWordLongerThan4Char = () => {
-  //
+const firstWordLongerThan4Char = (array) => {
+  return array.find(word => word.length>4)//
 };
 
 // Find Index
