@@ -99,22 +99,37 @@ const logWordsWithExclamation = (array) => {
 };
 
 // Map
-
-const arrayValuesSquaredTimesIndex = () => {
+// Make a new array of each number squared and then multiplied by their index number
+const arrayValuesSquaredTimesIndex = (array) => {
   //
+  return array.map((num, index) => num*num*index)
+
+
+
 };
 
-const arrayWordsUpcased = () => {
+const arrayWordsUpcased = (array) => {
+
+  // Make a new array of all the words in all uppercase
   //
+return array.map(x => x.toUpperCase())
+
+
 };
 
 // Some
 
-const areSomeNumsDivisibleBy7 = () => {
+const areSomeNumsDivisibleBy7 = (array) => {
+
+
+return array.some(num => num%7 ===0)
+
   //
 };
 
-const doSomeWordsHaveAnA = () => {
+const doSomeWordsHaveAnA = (array) => {
+
+return array.some(word => word.includes("a"))
   //
 };
 
