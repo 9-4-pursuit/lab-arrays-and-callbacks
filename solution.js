@@ -52,17 +52,17 @@ const logWordsWithExclamation = () => {
 // Map
 
 const arrayValuesSquaredTimesIndex = () => {
-  //
+  return nums.map((num, index) => num * num * index)
 };
 
 const arrayWordsUpcased = () => {
-  //
+  return words.map((word) => word.toUpperCase());
 };
 
 // Some
 
 const areSomeNumsDivisibleBy7 = () => {
-  //
+  return nums.some((nums) => nums % 7 === 0);
 };
 
 const doSomeWordsHaveAnA = () => {
