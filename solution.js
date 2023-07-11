@@ -36,17 +36,17 @@ const firstNumIndexDivisibleBy3 = () => {
 };
 
 const firstWordIndexLessThan2Char = () => {
-  //
+  return words.findIndex((words) => words.length < 2);
 };
 
 // For Each
 
 const logValuesTimes3 = () => {
-  //
+  return nums.forEach((nums) => nums * 3 === 0);
 };
 
 const logWordsWithExclamation = () => {
-  //
+  return words.forEach((word) => word + "!");
 };
 
 // Map
