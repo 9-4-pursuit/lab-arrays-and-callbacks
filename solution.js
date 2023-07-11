@@ -49,23 +49,28 @@ const firstNumIndexDivisibleBy3 = (array) => {
   return array.findIndex(isDivby3)
 };
 
-const firstWordIndexLessThan2Char = () => {
+const firstWordIndexLessThan2Char = (array) => {
+  const lessthan2characters = (element) => element.length < 2;
+  return array.findIndex(lessthan2characters)
   //
 };
 
 // For Each
 
-const logValuesTimes3 = () => {
+const logValuesTimes3 = (array) => {
+  array.forEach(element => console.log(element*3))
   //
 };
 
-const logWordsWithExclamation = () => {
+const logWordsWithExclamation = (array) => {
+  array.forEach(element => console.log(`${element}!`))
   //
 };
 
 // Map
 
-const arrayValuesSquaredTimesIndex = () => {
+const arrayValuesSquaredTimesIndex = (array) => {
+  return array.map((num, index) => num*num*index)
   //
 };
 
