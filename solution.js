@@ -36,7 +36,7 @@ const firstNumIndexDivisibleBy3 = () => {
 };
 
 const firstWordIndexLessThan2Char = () => {
-  //
+  return words.findIndex((words) => words.length < 2);
 };
 
 // For Each
