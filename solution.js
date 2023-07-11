@@ -23,29 +23,34 @@ const arrayLessThan5 = (nums) => {
 };
 
 
-const arrayOddLengthWords = () => {
+const arrayOddLengthWords = (words) => {
   const result = words.filter(word => word.length % 2 !== 0);
   return result
 };
 
 // Find
 
-const firstValDivisibleBy4 = () => {
-  //
+const firstValDivisibleBy4 = (nums) => {
+  const result = nums.find(num => Number.isInteger(num / 4));
+  // or   const result = nums.find(num => num % 4 === 0);
+  return result
 };
 
-const firstWordLongerThan4Char = () => {
-  //
+const firstWordLongerThan4Char = (words) => {
+  const result = words.find(word => word.length > 4)
+  return result
 };
 
 // Find Index
 
-const firstNumIndexDivisibleBy3 = () => {
-  //
+const firstNumIndexDivisibleBy3 = (nums) => {
+  const index = nums.findIndex(num => num % 3 === 0);
+  return index
 };
 
-const firstWordIndexLessThan2Char = () => {
-  //
+const firstWordIndexLessThan2Char = (words) => {
+  const index = words.findIndex(word => word.length < 2);
+  return index
 };
 
 // For Each
