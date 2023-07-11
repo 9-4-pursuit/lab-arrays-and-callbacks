@@ -66,7 +66,7 @@ const areSomeNumsDivisibleBy7 = () => {
 };
 
 const doSomeWordsHaveAnA = () => {
-  //
+  return words.some((word) => word.includes("A") || word.includes("a"));
 };
 
 module.exports = {
