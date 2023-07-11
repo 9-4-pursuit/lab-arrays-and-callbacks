@@ -55,22 +55,26 @@ const firstWordIndexLessThan2Char = (words) => {
 
 // For Each
 
-const logValuesTimes3 = () => {
-  //
+const logValuesTimes3 = (nums) => {
+  let newValue = nums.forEach * 3
+  console.log(newValue)
 };
 
-const logWordsWithExclamation = () => {
-  //
+const logWordsWithExclamation = (words) => {
+  let newWords = words.forEach + "!"
+  console.log(newWords)
 };
 
 // Map
 
-const arrayValuesSquaredTimesIndex = () => {
-  //
+const arrayValuesSquaredTimesIndex = (nums) => {
+  const newArr = nums.map((num, index) => num ** 2 * index);
+  return newArr
 };
 
-const arrayWordsUpcased = () => {
-  //
+const arrayWordsUpcased = (words) => {
+  const newArr = 
+  return newArr
 };
 
 // Some
