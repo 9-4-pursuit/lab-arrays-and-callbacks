@@ -27,10 +27,12 @@ const arrayOddLengthWords = (arr) => {
 
 const firstValDivisibleBy4 = (arr) => {
   //
+  return arr.find((el) => el % 4 === 0)
 };
 
 const firstWordLongerThan4Char = (arr) => {
   //
+  return arr.find((el) => el.length > 4)
 };
 
 // Find Index
