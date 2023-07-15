@@ -51,16 +51,19 @@ const firstWordIndexLessThan2Char = (arr) => {
 
 const logValuesTimes3 = (arr) => {
   //
+  return arr.forEach((el) => console.log(el * 3))
 };
 
 const logWordsWithExclamation = (arr) => {
   //
+  return arr.forEach((el) => console.log(el + '!'))
 };
 
 // Map
 
 const arrayValuesSquaredTimesIndex = (arr) => {
   //
+  return arr.map((el, index) => el * index)
 };
 
 const arrayWordsUpcased = (arr) => {
