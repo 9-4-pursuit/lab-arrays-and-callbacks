@@ -63,11 +63,12 @@ const logWordsWithExclamation = (arr) => {
 
 const arrayValuesSquaredTimesIndex = (arr) => {
   //
-  return arr.map((el, index) => el * index)
+  return arr.map((el, index) => el * el * index)
 };
 
 const arrayWordsUpcased = (arr) => {
   //
+  return arr.map((el) => el.toUpperCase())
 };
 
 // Some
