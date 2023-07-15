@@ -6,67 +6,70 @@ const isEveryNumGreaterThan2 = (arr) => {
   return arr.every((el) => el > 2)
 };
 
-const isEveryWordShorterThan7 = () => {
+const isEveryWordShorterThan7 = (arr) => {
   //
+  return arr.every(el => el.length < 7)
 };
 
 // Filter
 
-const arrayLessThan5 = () => {
+const arrayLessThan5 = (arr) => {
   //
+  return arr.filter((el) => el < 5)
 };
 
-const arrayOddLengthWords = () => {
+const arrayOddLengthWords = (arr) => {
   //
+  return arr.filter((el) => el.length % 2 !== 0)
 };
 
 // Find
 
-const firstValDivisibleBy4 = () => {
+const firstValDivisibleBy4 = (arr) => {
   //
 };
 
-const firstWordLongerThan4Char = () => {
+const firstWordLongerThan4Char = (arr) => {
   //
 };
 
 // Find Index
 
-const firstNumIndexDivisibleBy3 = () => {
+const firstNumIndexDivisibleBy3 = (arr) => {
   //
 };
 
-const firstWordIndexLessThan2Char = () => {
+const firstWordIndexLessThan2Char = (arr) => {
   //
 };
 
 // For Each
 
-const logValuesTimes3 = () => {
+const logValuesTimes3 = (arr) => {
   //
 };
 
-const logWordsWithExclamation = () => {
+const logWordsWithExclamation = (arr) => {
   //
 };
 
 // Map
 
-const arrayValuesSquaredTimesIndex = () => {
+const arrayValuesSquaredTimesIndex = (arr) => {
   //
 };
 
-const arrayWordsUpcased = () => {
+const arrayWordsUpcased = (arr) => {
   //
 };
 
 // Some
 
-const areSomeNumsDivisibleBy7 = () => {
+const areSomeNumsDivisibleBy7 = (arr) => {
   //
 };
 
-const doSomeWordsHaveAnA = () => {
+const doSomeWordsHaveAnA = (arr) => {
   //
 };
 
