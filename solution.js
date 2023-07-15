@@ -39,10 +39,12 @@ const firstWordLongerThan4Char = (arr) => {
 
 const firstNumIndexDivisibleBy3 = (arr) => {
   //
+  return arr.findIndex((el) => el % 3 === 0)
 };
 
 const firstWordIndexLessThan2Char = (arr) => {
   //
+  return arr.findIndex((el) => el.length < 2)
 };
 
 // For Each
